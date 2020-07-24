@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Plants</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+
+    <form id="new-item-form">
+        <div id="form-wrapper">
+
+            <div class="form-item">
+                <label for="name" class="label">Name</label>
+                <input type="text" id="name" required/>
+            </div>
+
+            <div class="form-item">
+                <label for="type" class="label">Plant type</label>
+                <input type="text" id="type"/>
+            </div>
+
+            <div class="form-item">
+                <label for="sun-level" class="label">Position</label>
+                <select id="sun-level">
+                    <option value="" disabled selected></option>
+                    <option value="light-shade">Light shade</option>
+                    <option value="shade">Shade</option>
+                    <option value="sun">Sun</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="watering" class="label">Watering</label>
+                <input type="text" id="watering"/>
+            </div>
+
+        </div>
+        <input type="submit" value="save" />
+    </form>
+    
+    <h1>Plants I own:</h1>
+
+    <ul id="plant-list"></ul>
+
+</body>
+</html>
