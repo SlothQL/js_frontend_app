@@ -13,8 +13,8 @@
         <div id="form-wrapper">
 
             <div class="form-item">
-                <label for="name" class="label">Name</label>
-                <input type="text" id="name" required/>
+                <label for="plant" class="label">Name</label>
+                <input type="text" id="plant" required/>
             </div>
 
             <div class="form-item">
@@ -23,12 +23,12 @@
             </div>
 
             <div class="form-item">
-                <label for="sun-level" class="label">Position</label>
-                <select id="sun-level">
+                <label for="sun" class="label">Position</label>
+                <select id="sun">
                     <option value="" disabled selected></option>
-                    <option value="light-shade">Light shade</option>
-                    <option value="shade">Shade</option>
-                    <option value="sun">Sun</option>
+                    <option value="Light Shade">Light shade</option>
+                    <option value="Shade">Shade</option>
+                    <option value="Sunny">Sun</option>
                 </select>
             </div>
 
@@ -38,12 +38,15 @@
             </div>
 
         </div>
-        <input type="submit" value="save" />
+        <input type="submit" value="Save" />
     </form>
     
+    <div id="list-of-items">
     <h1>Plants I own:</h1>
 
     <ul id="plant-list"></ul>
 
+    <button id="delete-button" type="button" value="delete" name="delete">Delete All</button>
+    </div>
 </body>
 </html>
