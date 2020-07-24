@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const handleSubmitForm = function(event) {
     event.preventDefault();
-    console.log(event);
     const newItem = createNewListItem(event);
     const list = document.querySelector('#plant-list');
     list.appendChild(newItem);
@@ -17,10 +16,15 @@ const handleSubmitForm = function(event) {
 }
 
 const createNewListItem = function() {
+    var data = new FormData(event.target);
+    var output = '';
+    for (const entry of data) {
+        console.log(entry);
+        output = output + entry[1] + "\r";
+    };
     const newListItem = document.createElement('li');
     newListItem.classList.add('list-item');
-    newListItem.textContent = `${this.plant.value} Type: ${this.type.value} Sun Level: ${this.sun.value} Watering: ${this.watering.value}`;
-    console.log(newListItem);
+    newListItem.textContent = `${this.plant.value} Type: ${this.type.value} Sun Level: ${output} Watering: ${this.watering.value}`;
     return newListItem;
 }
 
