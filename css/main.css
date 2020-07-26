@@ -1,3 +1,55 @@
 body {
     font-family: Palatino;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#form-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.form-item {
+    border: 2px solid darkgreen;
+    background-color: rgb(233, 248, 233);
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+#plant-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.list-item {
+    list-style: none;
+    border: 2px solid darkgreen;
+    background-color: rgb(233, 248, 233);
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 20px;
+    width: 800px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgb(233, 248, 233);;
+    border: 1px solid darkgreen;
+    font-weight: bold;
+    color: darkgreen;
+    border-radius: 5%;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 10px 10px 10px 0px;
 }

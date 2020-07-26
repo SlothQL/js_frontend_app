@@ -17,14 +17,14 @@ const handleSubmitForm = function(event) {
 
 const createNewListItem = function() {
     var data = new FormData(event.target);
+    console.log(data);
     var output = '';
     for (const entry of data) {
-        console.log(entry);
         output = output + entry[1] + "\r";
     };
     const newListItem = document.createElement('li');
     newListItem.classList.add('list-item');
-    newListItem.textContent = `${this.plant.value} Type: ${this.type.value} Sun Level: ${output} Watering: ${this.watering.value}`;
+    newListItem.textContent = `${this.plant.value} | Type: ${this.type.value} | Sun Level: ${output} | Watering: ${this.watering.value}`;
     return newListItem;
 }
 

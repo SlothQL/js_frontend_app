@@ -13,18 +13,19 @@
         <div id="form-wrapper">
 
             <div class="form-item">
-                <label for="plant" class="label">Name</label>
+                <label for="plant" class="label bold">Name:</label>
+                <br>
                 <input type="text" id="plant" required/>
             </div>
 
             <div class="form-item">
-                <label for="type" class="label">Plant type</label>
+                <label for="type" class="label bold">Plant type:</label>
+                <br>
                 <input type="text" id="type"/>
             </div>
 
             <div class="form-item">
-                <p>Select a Position:</p>
-
+                <label class="bold">Select a Position:</label>
                 <div>
                     <input type="radio" id="sunChoice1" name="sun" value="Light Shade">
                     <label for="sunChoice1">Light Shade</label>
@@ -39,12 +40,13 @@
             </div>
 
             <div class="form-item">
-                <label for="watering" class="label">Watering</label>
+                <label for="watering" class="label bold">Watering:</label>
+                <br>
                 <input type="text" id="watering"/>
             </div>
 
         </div>
-        <input type="submit" value="Save" />
+        <input class="button" type="submit" value="Save" />
     </form>
     
     <div id="list-of-items">
@@ -52,7 +54,7 @@
 
     <ul id="plant-list"></ul>
 
-    <button id="delete-button" type="button" value="delete" name="delete">Delete All</button>
+    <button class="button" id="delete-button" type="button" value="delete" name="delete">Delete All</button>
     </div>
 </body>
 </html>
